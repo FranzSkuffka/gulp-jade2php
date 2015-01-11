@@ -1,0 +1,21 @@
+{
+  "name": "gulp-jade2php",
+  "version": "1.0.0",
+  "description": "jade2php plugin for gulp. This is a temporary solution. For all other precompiled js-languages the usage of gulp-accord is recommended",
+  "main": "index.js",
+  "scripts": {
+    "test": "coffee test.coffee"
+  },
+  "author": "franzskuffka",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "gulp-accord": "git://github.com/franzskuffka/gulp-accord",
+    "gulp-util": "^3.0.2",
+    "jade": "^1.8.2",
+    "jade2php": "git://github.com/se7ensky/jade2php",
+    "object-assign": "^2.0.0",
+    "through2": "^0.6.3",
+    "lodash": "*"
+  }
+}
