@@ -2,6 +2,7 @@ gutil = require("gulp-util")
 through = require("through2")
 objectAssign = require("object-assign")
 jade2php = require("jade2php")
+_ = require 'lodash'
 
 phpDefaultOptions =
     omitPhpExtractor: yes
@@ -19,7 +20,7 @@ module.exports = (options) ->
       source: file.path
     )
     try
-      file.contents = new Buffer(jade2php(file.contents.toString(), phpDefaultOptions))
+      file.contents = new Buffer(jade2php(file.contents.toString(), _.merge phpDefaultOptions, options))
       @push file
     catch err
       @emit "error", new gutil.PluginError("gulp-jade2php", err,
