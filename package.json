@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "gulp": "^3.8.10",
-    "gulp-accord": "git://github.com/franzskuffka/gulp-accord",
     "gulp-util": "^3.0.2",
     "jade": "^1.8.2",
     "jade2php": "git://github.com/se7ensky/jade2php",
